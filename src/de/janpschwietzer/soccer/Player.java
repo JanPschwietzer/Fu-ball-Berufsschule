@@ -1,12 +1,12 @@
 package de.janpschwietzer.soccer;
 
 public class Player {
-    private String name;
-    private int age;
-    private int strength;
-    private int powerAtGoalKick;
-    private int motivation;
-    private int numberOfGoals;
+    protected String name;
+    protected int age;
+    protected int strength;
+    protected int powerAtGoalKick;
+    protected int motivation;
+    protected int numberOfGoals;
 
     public Player(String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals) {
         this.name = name;
@@ -35,7 +35,7 @@ public class Player {
         this.numberOfGoals += 1;
     }
 
-    private int validate(int kickStrength) {
+    protected int validate(int kickStrength) {
 
         if (kickStrength >= 1 && kickStrength <= 10) return kickStrength;
         else if (kickStrength < 1) return 1;
