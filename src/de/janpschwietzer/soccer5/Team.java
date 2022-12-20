@@ -12,7 +12,7 @@ public class Team {
         this.name = name;
         this.coach = coach;
         this.goalkeeper = goalkeeper;
-        this.squad=new ArrayList<Player>();
+        this.squad=new ArrayList<>();
     }
 
     public void addPlayer(Player player) {
